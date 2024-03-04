@@ -13,6 +13,8 @@
 </ul>
 <h2>Model<h2>
 <p>The Naive Bayes classifier is used to classify the messages as spam or non-spam. The model is trained on the training set and evaluated on the test set. The performance of the model is measured using metrics such as accuracy, precision, recall, and F1 score.<p>
+<p>For detailed code, refer to the following link:<p>
+<p>https://github.com/Abhigyann-Singh/Message-Phishing-ML-Detection/blob/main/Mlmodels/spamsms.ipynb<p>
 <h2>Web Interface<h2>
 <p>The web interface is developed using Flask, a Python web framework. The interface allows users to input a message and receive a prediction of whether the message is spam or non-spam. The interface also provides visualizations of the model's performance metrics.<p>
 <h2>Conclusion<h2>
