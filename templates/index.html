@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src = "{{url_for('static', filename='logo.jpg')}}" alt="logo.jpg" width="30" height="24" class="d-inline-block align-text-top" />
+          NP
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/message">Message Check</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{url_for('static', filename='textpreprocessing.png')}}" class="img-fluid" alt="...">
+          <div class="carousel-caption d-none d-md-block" colour = "black">
+            <h5>Text Preprocessing</h5>
+            <p>"Text preprocessing: where the real magic happens before the models do the heavy lifting, turning raw text into a refined feast for the algorithms."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static', filename='datavis.png')}}" class="img-fluid" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Data Visualization</h5>
+            <p>"Data visualization: Where making sense of the numbers requires more than just pretty charts."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static', filename='modelbuild.png')}}" class="img-fluid" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Model Buliding</h5>
+            <p>"Model building: where dreams of precision meet the reality of overfitting."</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Check Message Phishing</h5>
+            <p class="card-text">
+              Message phishing, also known as phishing attacks, is a deceptive online technique where cybercriminals attempt to trick individuals into divulging sensitive information, such as usernames, passwords, or financial details, by posing as a trustworthy entity.</p>
+            <a href="/message" class="btn btn-primary">Check Now</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
