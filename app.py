@@ -20,7 +20,6 @@ def predict():
         message = request.form['message']
         # print(message)
         message = np.array([message])
-        print(message)
         ttransformed = vectorizer.transform(message)
         my_prediction = model.predict(ttransformed)
     if my_prediction[0] == 0:
